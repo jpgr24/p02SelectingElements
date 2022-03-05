@@ -47,9 +47,9 @@ describe('checkboxes', () => {
         
         
         
-        await checkboxespage.click2()
+        await checkboxespage.click(checkboxespage.option2)
         await browser.pause(2000);
-        await !expect(checkboxespage.option2).toBeChecked();
+        await expect(checkboxespage.option2).toBeChecked();
         
       /**  await expect(SecurePage.flashAlert).toHaveTextContaining(
             'You logged into a secure area!');**/

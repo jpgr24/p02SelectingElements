@@ -16,9 +16,9 @@ class checkboxespage extends Page {
 }
     get option2(){return $("form br ~ input")}
     //get clicked2(){return $("form br ~ input").getAtribute("checked")}
- async click2(word) {
+ async click(element) {
         
-        await this.option2.click();
+        await element.click();
     }
      
      open() {

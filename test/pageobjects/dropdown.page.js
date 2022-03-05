@@ -20,9 +20,9 @@ get option1(){return $('[value="1"]') }
     }
     get option2(){return $('[value="2"]') }
 
-    async selection(word) {
+    async selection(a,word) {
         
-        await this.select.selectByVisibleText(word);
+        await a.select.selectByVisibleText(word);
     }
     
 
